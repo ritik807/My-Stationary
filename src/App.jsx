@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import Product from "./pages/Product"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import ProductList from "./pages/ProductList"
 import BrandList from "./pages/BrandList";
 import Navbar from "./components/Navbar";
 
@@ -21,7 +20,7 @@ const App = () => {
         <Route path="/Product" element ={<Product/>}/>
         <Route path="/About" element ={<About/>}/>
         <Route path="/Contact" element ={<Contact/>}/>
-        {/* <Route path="/Products/:category" element ={<ProductList/>}/> */}
+
         <Route path="/Brands/:productName" element={<BrandList />} />
       </Routes>
 

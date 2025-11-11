@@ -4,7 +4,7 @@ import { BrandsData } from "../data/Brands";
 
 const BrandList = () => {
   const { productName } = useParams();
-  // productName in url might be lowercase — try to match keys ignoring case
+  
   const findKey = (name) => {
     if (!name) return null;
     const keys = Object.keys(BrandsData);
