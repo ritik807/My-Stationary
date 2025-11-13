@@ -6,6 +6,8 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import BrandList from "./pages/BrandList";
 import Navbar from "./components/Navbar";
+import BrandsData from './data/Brands';
+
 
 
 const App = () => {
@@ -13,15 +15,14 @@ const App = () => {
   return (
     <Router>
       
-      <Navbar/>
+      <Navbar data={BrandsData}/>
 
       <Routes>
         <Route path="/" element ={<Home/>}/>
         <Route path="/Product" element ={<Product/>}/>
         <Route path="/About" element ={<About/>}/>
         <Route path="/Contact" element ={<Contact/>}/>
-
-        <Route path="/Brands/:productName" element={<BrandList />} />
+        <Route path="/brands/:productName" element={<BrandList />} />
       </Routes>
 
     </Router>

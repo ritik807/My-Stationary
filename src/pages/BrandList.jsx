@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { BrandsData } from "../data/Brands";
+import  BrandsData from "../data/Brands";
 
 const BrandList = () => {
   const { productName } = useParams();

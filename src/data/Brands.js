@@ -26,7 +26,7 @@ import reynolds4 from "../assets/Brands/Reynolds4.png";
 import stabilo from "../assets/Brands/Stabilo.png";
 
 // ✅ Correct Data Object
-export const BrandsData = {
+const BrandsData = {
   Pens: [
     { name: "Pilot", image: pilot, price: 50 },
     { name: "Reynolds", image: reynolds, price: 40 },
@@ -137,3 +137,4 @@ export const BrandsData = {
 };
 
 
+export default BrandsData;
